@@ -1,0 +1,14 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --reporter=html"
+  },
+  "author": "Ljubisha Milosov",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}
