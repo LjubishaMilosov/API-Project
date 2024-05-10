@@ -1,5 +1,5 @@
 import{ expect, test} from '@playwright/test'
-
+ 
 test('create user post', async({request}) => {
     const response = await request.post('/posts', {
         data: {
@@ -8,7 +8,7 @@ test('create user post', async({request}) => {
             userId:  1
         }
     })
-
+ 
     expect(response.status()).toBe(201)
     expect( await response.json()).toEqual(expect.objectContaining( {
         "title": "New Post",
